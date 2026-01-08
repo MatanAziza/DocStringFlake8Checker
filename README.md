@@ -32,24 +32,21 @@ pip install flake8
 ## Usage
 
 - Check a single Python file
-
 ```bash
 python check_docstring.py my_file.py
 ```
-
--> Only the specified file will be checked.
+Only the specified file will be checked.
 
 - Check all Python files recursively
-
 ```bash
 python check_docstring.py
 ```
-
--> This scans all .py files in the current directory and its subdirectories.
+This scans all .py files in the current directory and its subdirectories.
 
 - The script automatically skips itself (check_docstring.py).
 
 Example Output
+```console
 📄 example.py
 
 - function 'add' sans docstring (ligne 10)
@@ -59,11 +56,13 @@ Example Output
 
 Running flake8...
 utils.py:3:1: F401 'os' imported but unused
+```
 
 Error Handling
 
 If a file contains a syntax error, it is reported and skipped:
 
-`[ERREUR] bad_file.py : erreur de syntaxe ligne 14`
+```console
+[ERREUR] bad_file.py : erreur de syntaxe ligne 14```
 
 Other files continue to be processed.
