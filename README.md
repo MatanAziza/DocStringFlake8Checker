@@ -1,4 +1,4 @@
-# Docstring Checker & flake8 Runner
+# Docstring Checker & flake8 Runner (Linux)
 
 A small Python script that scans Python files and reports missing docstrings for **functions, async functions, and classes**, then runs **flake8** on the project.
 
@@ -29,7 +29,17 @@ Install flake8 if needed:
 pip install flake8
 ```
 
-## Usage
+## Usages
+
+### Fast download
+
+- Paste this command in the folder you want files to be checked:
+```bash
+curl -O https://raw.githubusercontent.com/MatanAziza/DocStringFlake8Checker/refs/heads/main/check_docstring.py
+```
+What it does: Download directly the checker in a created file instead of the classic download method.
+
+### Classic Usage
 
 - Check a single Python file
 ```bash
